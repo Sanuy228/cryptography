@@ -1,3 +1,11 @@
+import os
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+                  os.path.dirname(__file__), 
+                  os.pardir)
+)
+sys.path.append(PROJECT_ROOT)
+
 class Alphabet:
     # класс создающий словари для шифров
     # символы расскладок
@@ -47,3 +55,4 @@ class Alphabet:
             self.x += 1
 
         return self.num_symb
+    
