@@ -11,7 +11,7 @@ class Alphabet:
     # символы расскладок
     symb_ru = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
     symb_eu = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    signs = ",./?\|!@#$%^&*()-_=+`~ "
+    signs = ",./?\|!@#$%^&*()- _=+`~"
 
 
     def __init__(self, b1, b2, b3):
@@ -36,23 +36,24 @@ class Alphabet:
     # словари для символов 
     symb_num = {}
     num_symb = {}
-    x = 0
 
 
     # словарь символ_цифра
     def sn(self):
+        x = 0
         for i in self.symbols():
-            self.symb_num[i] = self.x
-            self.x += 1
+            self.symb_num[i] = x
+            x += 1
 
         return self.symb_num
 
 
     # словарь цифра_символ 
     def ns(self):
+        x = 0
         for i in self.symbols():
-            self.num_symb[self.x] = i
-            self.x += 1
+            self.num_symb[x] = i
+            x += 1
 
         return self.num_symb
     

@@ -19,7 +19,7 @@ class Caesars_cipher:
         self.text = text
         self.sim = sim
 
-    def en_caesar(self, ns, sn):
+    def en_caesar(self, sn, ns):
         if self.sim == "yes":
             for i in self.text:
                 if i in Alphabet.signs:

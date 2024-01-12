@@ -1,14 +1,15 @@
 from alphabet.alphabets import Alphabet
 from ciphers.caesar import Caesars_cipher
+from ciphers.Vigener import vigener
 
-em = Alphabet("yes", "", "yes")
-en = Caesars_cipher("", "yes")
+em = Alphabet("yes", "", "")
+en = Caesars_cipher("саша шёл по лесу", "yes")
+ec = vigener("саша шёл по лесу ываыва ываываы", "саша шёл по лесу", "yes")
+
 
 ns = em.ns()
-ssn = em.sn()
+sn = em.sn()
+print(ns)
 
-print(len(ssn))
+ec.en_caesar(sn, ns)
 
-en.dec_caesar(ns, ssn)
-
-print(Alphabet.signs)
