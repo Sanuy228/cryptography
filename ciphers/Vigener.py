@@ -27,7 +27,7 @@ class vigener:
                 if i in Alphabet.signs:
                     self.code_text += i
                 else:
-                    self.code_text += ns[ (int(int(sn[i]) + int(sn[self.text_ciphers[x % len(self.text_ciphers)]]))) % len(ns)] # ошибка в пробеле в ключе
+                    self.code_text += ns[ (int(int(sn[i]) + int(sn[self.text_ciphers[x % len(self.text_ciphers)]]))) % len(ns)] 
                     x += 1
                     
         else:
@@ -44,7 +44,7 @@ class vigener:
                 if i in Alphabet.signs:
                     self.code_text += i
                 else:
-                    self.code_text += ns[ (int(int(sn[i]) - int(sn[self.text_ciphers[x % len(self.text_ciphers)]]))) % len(ns)] # ошибка в пробеле в ключе
+                    self.code_text += ns[ (int(int(sn[i]) - int(sn[self.text_ciphers[x % len(self.text_ciphers)]]))) % len(ns)] 
                     x += 1
                     
         else:

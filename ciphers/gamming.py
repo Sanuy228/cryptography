@@ -1,3 +1,5 @@
+# гамирование под вопросом реализации
+
 import os
 import sys
 PROJECT_ROOT = os.path.abspath(os.path.join(
