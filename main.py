@@ -4,12 +4,11 @@ from ciphers.Vigener import vigener
 
 em = Alphabet("yes", "", "")
 en = Caesars_cipher("саша шёл по лесу", "yes")
-ec = vigener("саша шёл по лесу ываыва ываываы", "саша шёл по лесу", "yes")
+ec = vigener("юари ёёш пж фтса", "машина", "yes")
 
 
 ns = em.ns()
 sn = em.sn()
-print(ns)
 
-ec.en_caesar(sn, ns)
+ec.dec_caesar(sn, ns)
 

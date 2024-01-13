@@ -9,7 +9,7 @@ sys.path.append(PROJECT_ROOT)
 class Alphabet:
     # класс создающий словари для шифров
     # символы расскладок
-    symb_ru = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+    symb_ru = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
     symb_eu = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     signs = ",./?\|!@#$%^&*()- _=+`~"
 
