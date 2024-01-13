@@ -30,7 +30,7 @@ class Caesars_cipher:
             for i in self.text:
                 self.code_text += ns[int(int((sn[i]+3)) % len(sn))]
 
-        print(''.join(self.code_text))
+        return self.code_text
 
     def dec_caesar(self, ns, sn):
         if self.sim == "yes":
@@ -43,4 +43,4 @@ class Caesars_cipher:
             for i in self.text:
                 self.code_text += ns[int(int((sn[i]-3)) % len(sn))]
 
-        print(''.join(self.code_text))
+        return self.code_text
